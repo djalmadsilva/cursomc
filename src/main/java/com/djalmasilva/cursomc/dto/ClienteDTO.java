@@ -6,6 +6,7 @@ import com.djalmasilva.cursomc.domain.Cliente;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public class ClienteDTO implements Serializable {
@@ -14,7 +15,7 @@ public class ClienteDTO implements Serializable {
 	
 	private Integer id;
 	
-	@NotEmpty(message="Preenchimento obrigatório")
+	@NotNull(message="Preenchimento obrigatório")
 	@Size(min=5, max=120, message="O tamanho deve ser entre 5 e 120 caracteres")
 	private String nome;
 	
