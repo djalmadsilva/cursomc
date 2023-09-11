@@ -3,12 +3,14 @@ package com.djalmasilva.cursomc.dto;
 import java.io.Serializable;
 
 import com.djalmasilva.cursomc.domain.Cliente;
+import com.djalmasilva.cursomc.services.validation.ClienteUpdate;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
+@ClienteUpdate
 public class ClienteDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
